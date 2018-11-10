@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="invitado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-17 09:31:35 a. m."/>
+        <attribute name="created" value="aW52aXRhZG87TEFCQTEzMjA0ODsyMDE4LTEwLTE3OzA5OjI0OjM0IGEuIG0uOzI4OTk="/>
+        <attribute name="edited" value="aW52aXRhZG87TEFCQTEzMjA0ODsyMDE4LTEwLTE3OzA5OjMxOjM1IGEuIG0uOzI7MzAwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Materias" type="Boolean" array="False" size=""/>
+            <declare name="Servicio" type="Boolean" array="False" size=""/>
+            <declare name="Residencias" type="Boolean" array="False" size=""/>
+            <assign variable="Materias" expression="true"/>
+            <assign variable="Servicio" expression="true"/>
+            <assign variable="Residencias" expression="true"/>
+            <if expression="(Materias == true) &amp;&amp; (Servicio == true) &amp;&amp; (Residencias == true)">
+                <then>
+                    <output expression="&quot;YA TE PUEDES TITULAR&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;NO TE PUEDES TITULAR&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="invitado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-03 09:32:28 a. m."/>
+        <attribute name="created" value="aW52aXRhZG87TEFCQTEzMTAwNzsyMDE4LTEwLTAzOzA5OjI1OjAyIGEuIG0uOzI4ODQ="/>
+        <attribute name="edited" value="aW52aXRhZG87TEFCQTEzMTAwNzsyMDE4LTEwLTAzOzA5OjMyOjI4IGEuIG0uOzI7Mjk5OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Cu&#225;l es tu edad?&quot;" newline="True"/>
+            <declare name="iEdad" type="Integer" array="False" size=""/>
+            <input variable="iEdad"/>
+            <output expression="&quot;Tienes INE?&quot;" newline="True"/>
+            <declare name="bTieneINE" type="Boolean" array="False" size=""/>
+            <input variable="bTieneINE"/>
+            <if expression="iEdad &gt;= 18">
+                <then>
+                    <if expression="bTieneINE == true">
+                        <then>
+                            <output expression="&quot;PASELE&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;A la ch$#a clarita&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Saquese de aqui&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
